@@ -1,0 +1,99 @@
+
+.section {
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+    &_face {
+        background-image: url("../media/section/face.jpg");
+        background-repeat: no-repeat;
+        background-position: center bottom;
+        background-size: cover;
+    }
+
+    &_symptoms {
+        padding-top: 280px;
+        padding-bottom: 280px;
+        background-image: url("../media/section/symptoms.jpg");
+        background-repeat: no-repeat;
+        background-position: center top;
+        background-size: cover;
+    }
+
+    &_footer {
+        padding-top: 150px;
+        background-image: url("../media/section/footer.jpg");
+        background-repeat: no-repeat;
+        background-position: center top;
+        background-size: cover;
+    }
+
+    &_act {
+        background-image: url("../media/section/act.jpg");
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+    }
+}
+
+.section__title {
+    font-weight: 800;
+}
+
+.section__professional {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    min-width: 434px;
+    margin-left: 350px;
+    transform: translateX(-50%);
+}
+
+@media (max-width: 1030px) {
+    .section {
+        &_face {
+            background-image: url("../media/section/face-1030.jpg");
+        }
+
+        &_symptoms {
+            padding-top: 130px;
+            background-image: url("../media/section/symptoms-1030.jpg");
+            background-position: center bottom;
+        }
+
+        &_footer {
+            padding-top: 80px;
+        }
+    }
+
+    .section__title {
+        line-height: 1;
+    }
+}
+
+@media (max-width: 768px) {
+    .section {
+        &_face {
+            background-image: url("../media/section/face-768.jpg");
+        }
+    }
+
+    .section__professional {
+        display: none;
+    }
+}
+
+@media (max-width: 480px) {
+    .section {
+        padding-top: 30px;
+        padding-bottom: 30px;
+
+        &_symptoms {
+            padding-bottom: 160px;
+        }
+    }
+
+    .section__title {
+        text-align: left;
+        text-transform: none;
+    }
+}
