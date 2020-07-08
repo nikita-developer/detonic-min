@@ -15,6 +15,7 @@
     position: relative;
     padding: 35px;
     margin-right: 35px;
+    margin-bottom: 30px;
     background-color: #fff;
     background-image: url('../media/professional/bg.jpg');
     background-repeat: no-repeat;
@@ -40,6 +41,21 @@
     bottom: 0;
 }
 
+.professional__name {
+    font-size: 23px;
+    font-weight: 750;
+    color: #fff;
+
+    & mark {
+        display: block;
+        font-size: 15px;
+        font-style: italic;
+        font-weight: 500;
+        line-height: 20px;
+        color: #fff;
+    }
+}
+
 @media (max-width: 1030px) {
     .professional__info {
         & p {
@@ -60,12 +76,15 @@
 
 @media (max-width: 768px) {
     .professional__info {
+        padding-bottom: 50px;
         margin-right: 0;
         background-image: none;
     }
 
     .professional__media {
-        display: none;
+        right: 0;
+        bottom: -137px;
+        max-width: 120px;
     }
 
     .professional__title {
@@ -80,5 +99,10 @@
 @media (max-width: 480px) {
     .professional__info {
         padding: 15px;
+        margin-bottom: 100px;
+    }
+
+    .professional__media {
+        bottom: -177px;
     }
 }

@@ -132,6 +132,8 @@
     }
 
     .face__check {
+        position: relative;
+        z-index: 1;
         max-width: 320px;
         margin-right: auto;
         margin-left: auto;
@@ -139,11 +141,24 @@
     }
 
     .face__product {
-        position: static;
+        position: relative;
+        bottom: auto;
+        left: -110px;
         margin-right: auto;
         margin-bottom: 40px;
         margin-left: auto;
         transform: translateX(0);
+    }
+
+    .face__woman {
+        position: absolute;
+        right: -26px;
+        bottom: 100%;
+        width: 200px;
+        height: 320px;
+        background-image: url('../media/face/woman.png');
+        background-repeat: no-repeat;
+        background-size: cover;
     }
 }
 
@@ -152,15 +167,30 @@
         max-width: 100%;
         font-size: 18px;
     }
+}
 
+@media (max-width: 420px) {
     .face__product {
-        &::before {
-            display: none;
-        }
+        left: -87px;
+        max-width: 115px;
 
         &::after {
-            display: none;
+            bottom: 32px;
+            left: -28px;
+            width: 170px;
+            height: 190px;
         }
+
+        &::before {
+            width: 240px;
+            height: 79px;
+        }
+    }
+
+    .face__woman {
+        right: 0;
+        width: 140px;
+        height: 224px;
     }
 }
 
