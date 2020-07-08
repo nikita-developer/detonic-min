@@ -1,0 +1,57 @@
+
+.women {
+    max-width: 510px;
+}
+
+.women__title {
+    margin-bottom: 40px;
+    font-size: 44px;
+    line-height: 43px;
+    text-transform: uppercase;
+
+    & mark {
+        color: #e3654c;
+    }
+}
+
+.women__item {
+    position: relative;
+    padding-left: 35px;
+    font-size: 19px;
+
+    & + & {
+        margin-top: 20px;
+    }
+
+    & mark {
+        font-weight: 600;
+        color: #e3654c;
+    }
+
+    &::before {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 21px;
+        height: 21px;
+        content: '';
+        background-image: url('../media/women/check.png');
+        background-repeat: no-repeat;
+    }
+}
+
+@media (max-width: 1030px) {
+    .women {
+        max-width: 400px;
+    }
+
+    .women__title {
+        font-size: 32px;
+    }
+}
+
+@media (max-width: 480px) {
+    .women__title {
+        font-size: 28px;
+    }
+}

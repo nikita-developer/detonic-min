@@ -1,0 +1,38 @@
+
+.warning__title {
+    display: block;
+    font-size: 52px;
+    color: #fff;
+    text-align: center;
+
+    & span {
+        display: block;
+        margin-left: 20px;
+        font-size: 23px;
+        text-align: center;
+        text-transform: uppercase;
+        letter-spacing: 18px;
+    }
+}
+
+@media (max-width: 1030px) {
+    .warning__title {
+        & span {
+            letter-spacing: 10px;
+        }
+    }
+}
+
+@media (max-width: 480px) {
+    .warning__title {
+        font-size: 29px;
+        text-align: center;
+
+        & span {
+            margin-left: 0;
+            font-size: 20px;
+            text-align: center;
+            letter-spacing: 0;
+        }
+    }
+}

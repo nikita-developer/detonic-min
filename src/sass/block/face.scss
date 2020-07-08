@@ -56,11 +56,6 @@
     max-width: 229px;
     margin-left: -70px;
     transform: translateX(-50%);
-    perspective: 1000px;
-
-    & img {
-        animation: rotation 4s infinite linear;
-    }
 
     &::before {
         position: absolute;
@@ -162,28 +157,10 @@
         &::before {
             display: none;
         }
-    }
-}
 
-@keyframes rotation {
-    0% {
-        transform: rotateY(-7deg);
-    }
-
-    25% {
-        transform: rotateY(0deg);
-    }
-
-    50% {
-        transform: rotateY(7deg);
-    }
-
-    75% {
-        transform: rotateY(0deg);
-    }
-
-    100% {
-        transform: rotateY(-7deg);
+        &::after {
+            display: none;
+        }
     }
 }
 
