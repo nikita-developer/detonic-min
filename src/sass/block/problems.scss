@@ -86,11 +86,18 @@
 
 @media (max-width: 768px) {
     .problems__media {
-        display: none;
+        right: 0;
+        bottom: -100px;
+        left: auto;
+        z-index: 1;
+        max-width: 100px;
+        margin-left: 0;
+        transform: translateX(0);
     }
 
     .problems__body {
         max-width: 100%;
+        margin-bottom: 40px;
     }
 }
 
@@ -101,5 +108,9 @@
 
     .problems__info {
         padding: 15px;
+    }
+
+    .problems__body {
+        margin-bottom: 70px;
     }
 }
